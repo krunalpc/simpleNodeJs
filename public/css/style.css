@@ -1,0 +1,317 @@
+/*Custom Style*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+body {
+	font-family: 'Quicksand', 'Arial', 'Helvetica', sans-serif;
+}
+.container.nomargin {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.padding {
+	padding:80px 0;
+}
+
+.margin {
+	margin: 30px 0;
+}
+.title {
+	font-size:6em;
+	font-weight: 700;
+	font-family:'Lato',sans-serif;
+	display:block;
+}
+hr.star {
+	margin:25px auto 30px;
+	padding:0;
+	max-width:550px;
+	border:0;
+	border-top:solid 5px;
+	text-align:center;
+}
+hr.star:after {
+	color:#fff;	
+	content:"\2605";
+	position:relative;
+	top:-.8em;
+	padding:0 .25em;
+	font-size: 2.5em;
+	background: #ecf0f1;
+}
+
+
+/* Navigation Styling */
+.navbar {
+	background: #34495e;
+	padding: 20px;
+}
+.navbar .navbar-brand {
+	color: #ecf0f1;
+	font-size: 2.5em;
+	font-weight: 900;
+}
+.navbar .navbar-brand:hover {
+	color: #e67e22;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #ecf0f1;
+	font-size: 1.5em;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a {
+	background: #34495e;
+	border-bottom: 5px solid #e67e22;
+}
+
+
+/* Header Styling */
+#header {
+	background: #ecf0f1;
+	color: #34495e;
+}
+#header .icon {
+	font-size: 30px;
+	margin-top: 70px;
+	display: block;
+
+}
+#header .hr.star:after{
+	color: #e67e22;
+}
+#header .skills {
+	font-size: 2.75em
+}
+
+#header a{
+	color: #e67e22;
+}
+
+#header a:hover {
+	color: #d35400;
+}
+
+#header hr.star:after{
+	color: #e67e22;
+	background: #ecf0f1;
+}
+/*down arrow icon*/
+
+/* Work Styling */
+#work {
+	color: #34495e;
+}
+#work img {
+
+}
+#work hr.star:after {
+	color: #e67e22;
+	background: #fff;
+}
+
+#work .portfolio-item {
+	border-radius: 15px;
+	height: 300px;
+	background: #eee;
+}
+
+/*Hover effect*/
+#work .portfolio-item img {
+	border-radius: 15px;
+	margin: 20px 0;
+	opacity: 1;
+	transition: all .3s;
+}
+
+#work .portfolio-item img:hover {
+	margin: 5px 0;
+	opacity: .7;
+}
+
+
+/* Contact Styling */
+#contact {	
+		
+	color: #34485e;
+	background: #ecf0f1;
+}
+#contact h4 {
+	
+}
+#contact .has-success .form-control,
+#contact .has-success .control-label {
+
+}
+
+#contact hr.star {
+
+}
+
+#contact hr.star:after {
+	color: #e67e22;
+	background: #ecf0f1;
+}
+#contact .btn-social {
+	display:inline-block;
+	width:50px;
+	height:50px;
+	border:3px solid #34495e;
+	border-radius:100%;
+	text-align:center;
+	font-size:25px;
+	font-weight:900;
+	line-height:45px;
+}
+
+#contact .btn-social i {
+	color: #34495e;
+}
+
+#contact .socials>li {
+	margin: 25px 12px;
+}
+#contact .socials a {
+	transition: all .2s;
+}
+#contact .socials>li:hover a {
+	background: #34495e;
+}
+#contact .socials>li:hover i {
+	color: #ecf0f1;
+}
+
+#contact .btn-primary {
+	
+}
+
+#contact .btn-primary:focus,
+#contact .btn-primary:hover{
+	
+}
+
+/* Footer Styling */
+footer {
+/*	background: #34495e;
+	color: #ecf0f1;
+*/}
+
+footer p {
+	padding: 10px 0;
+	margin: 0;
+}
+
+
+
+/* ==== Media Queries ====*/
+
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* Styles */
+
+.title {
+
+}
+
+.padding {
+
+}
+
+
+#work .portfolio-item {
+	border-radius: 15px;
+	height: 200px;
+	background: #fff;
+
+}
+
+/*Hover effect*/
+#work .portfolio-item img {
+	margin: 0 auto;
+	display: inline-block;
+	width: 85%;
+	height: 85%;
+	border-radius: 15px;
+	margin: 20px 0;
+	opacity: 1;
+	transition: all .3s;
+}
+
+#work .portfolio-item img:hover {
+	margin: 20px 0;
+	opacity: .7;
+}
+
+#contact  {
+	
+}
+
+}
+
+/* Iphone/Android (Small Devices) ----------- */
+@media only screen and (min-width : 320px) and (max-width: 767px) {
+/* Styles */
+
+#header{
+	padding-top: 100px; 
+}
+
+#header a{
+	color: #e67e22;
+}
+
+#header a:hover {
+	color: #e67e22;
+}
+
+#header .icon {
+	font-size: 15px;
+	margin-top: 10px;
+	display: block;
+}
+.title {
+	font-size:3em;
+}
+
+.skills {
+	font-size: 1em;
+}
+
+#header .icon {
+	font-size: 30px;
+	margin-top: 70px;
+	display: block;
+}
+
+#contact .btn-social {
+	display:inline-block;
+	width:35px;
+	height:35px;
+	border:2px solid #34495e;
+	border-radius:100%;
+	text-align:center;
+	font-size:16px;
+	font-weight:900;
+	line-height:30px;
+}
+
+
+
+#contact .socials>li {
+	margin: 15px 2px;
+}
+
+.contact-form button.pull-right {
+	
+}
+
+.social-media {
+	margin-top: 30px;
+}
+
+.margin.mobile_only {
+	display: none;
+}
+}
