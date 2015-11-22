@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<style>
+	#header {
+	    padding:5px;
+	    border-style: solid; 
+	}
+	#header h1 {
+		text-align: left;
+		padding-left: 10%;
+	}
+	#header a {
+		text-align: right;
+		padding-left: 10%;
+	}
+	#body { padding-top: 70px; }
+	#nav {
+	    line-height:30px;
+	    background-color:#eeeeee;
+	    height:300px;
+	    width:150px;
+	    float:left;
+	    padding:5px;
+	    border-style: solid;
+	    position:relative;
+	}
+	#section {
+	    width:100%;
+	    float:auto;
+		text-align: left;
+		padding-left: 15%;
+	}
+	#section p {
+		text-align: center;
+		padding-left: 15%;
+		padding-right: 5%;
+	}
+/*	#section h2 {
+		text-align: left;
+		padding-left: 15%;
+	}
+	#section form {
+		text-align: left;
+		padding-left: 15%;
+	}
+*/	#footer {
+	    clear:both;
+	    text-align:center;
+	    padding:5px;
+	    border-style: solid; 
+	    position: relative;
+	 	width:100%;
+		bottom:0;
+		left:0;
+	}
+</style>
+</head>
+<title>Admin</title>
+<body>
+
+<div id="header">
+	<h1>Form Maker</h1>
+	<a href="">Register</a>
+	<a href="">Login</a>
+	<a href="">Username</a>
+	<a href="">Logout</a>
+</div>
+
+<div id="nav">
+	<a href="">Home</a><br>
+	<a href="">Profile</a><br>
+	<a href="">Admin</a><br>
+	<a href="">Forms</a><br>
+</div>
+
+<div id="section">
+   <h2>Forms</h2>
+
+		  <ul class="nav nav-tabs">
+		    <li class="active"><a data-toggle="tab" href="#forms">Forms</a></li>
+		    <li><a data-toggle="tab" href="#fields">Fields</a></li>
+		  </ul>
+		  <div class="tab-content">
+			 <div id="forms" class="tab-pane fade in active">
+				  <table class="table table-striped">
+					  <thead>
+					      <tr>
+					        <th>Form Name</th>
+					        <th>Action</th>
+					      </tr>
+					    </thead>
+				    <tbody>
+				      <tr>
+			  		    <form>
+					        <td> <input type="text" name="username" placeholder="User Name"> </td>
+					        <td><a href="#"><span class="glyphicon glyphicon-plus"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-ok"></span></a></td>
+				        </form>
+				      </tr>
+				      <tr>
+				        <td>mary@example.com</td>
+				        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+				      </tr>
+				      <tr>
+				        <td>july@example.com</td>
+				        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+				      </tr>
+				      <tr>
+				        <td>july@example.com</td>
+				        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+				      </tr>
+				    </tbody>
+				  </table>
+			  </div>
+			  <div id="fields" class="tab-pane fade">
+			  	<form role="form">
+
+			        <div class="form-group">
+					  <label for="usr">First Name:</label>
+					  <input type="text" class="form-control" id="f_name">
+					  <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+					</div>
+
+			        <div class="form-group">
+				      <label for="pwd">Last Name:</label>
+				      <input type="text" class="form-control" id="l_name">
+				      <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+				    </div>
+
+			        <div class="form-group">
+					  <label for="sel1">Date of Birth:</label>
+					  <select class="form-control" id="sel1">
+					    <option>1</option>
+					    <option>2</option>
+					    <option>3</option>
+					    <option>4</option>
+					  </select>
+					  <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+					</div>
+
+			        <div class="form-group">
+					  <label for="sel1">Gender:</label>
+					  <select class="form-control" id="sel1">
+					    <option>Male</option>
+					    <option>Female</option>
+					  </select>
+					  <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					  <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+					</div>
+
+					<div class="form-group">
+						<label for="sel1">Roles:</label>
+						<div class="checkbox">
+					      <label><input type="checkbox" value="">Admin</label>
+					    </div>
+					    <div class="checkbox">
+					      <label><input type="checkbox" value="">Student</label>
+					    </div>
+					    <div class="checkbox disabled">
+					      <label><input type="checkbox" value="" disabled>User</label>
+					    </div>
+					    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+				    </div>
+
+				    <div class="form-group">
+					    <label for="sel1">License Aggrement:</label>
+					    <div class="radio">
+					      <label><input type="radio" name="optradio">Option 1</label>
+					    </div>
+					    <div class="radio">
+					      <label><input type="radio" name="optradio">Option 2</label>
+					    </div>
+					    <div class="radio disabled">
+					      <label><input type="radio" name="optradio" disabled>Option 3</label>
+					    </div>
+					    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-remove"></span></a>
+					    <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
+				    </div>
+				    
+				    <hr>
+
+				    <div class="form-group">
+					  <label for="sel1">Add New Field:</label>
+					  <select class="form-control" id="sel1">
+					    <option>Single Line Text</option>
+					    <option>Female</option>
+					  </select>
+					  <a href="#"><span class="glyphicon glyphicon-plus"></span></a>
+					</div>
+
+		        </form>
+			  </div>
+		  </div>
+</div>
+
+<div id="footer">
+	Copyright © Krunal Panchal
+</div>
+
+</body>
+</html>

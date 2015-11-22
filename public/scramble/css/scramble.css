@@ -1,0 +1,67 @@
+.navbar-toggle .icon-bar{
+	background-color: #fee970;
+}
+
+.navbar-brand.brand-logo b{
+	font-size: 25px;
+	font-weight: 900;
+	color: #fee970;
+}
+
+.header-title a{
+	color: #fee970;
+	font-size: 17px;
+}
+
+.scramble-body {
+	/* background-color: #dbbb09; */
+	background-color: #5D021B;
+	color: #fee970;
+}
+
+.scramble-body .letter{
+	font-weight: bold;
+	font-size: 25px;
+	height: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	color: #5D021B;
+	width: 80px;
+	display: inline-block;
+	background: #fee970;
+	margin: 0 5px;
+	margin-top: 20px;
+}
+
+.scramble-body .typed{
+	font-weight: bold;
+	font-size: 25px;
+	height: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	border-radius: 50px;
+	color: #dbbb09;
+	width: 80px;
+	display: inline-block;
+	background: #5D021B;
+	margin: 0 5px;
+	margin-top: 20px;
+	border: 2px solid #dbbb09;
+}
+
+.result {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	font-size: 25px;
+}
+
+.scramble-body .restart button {
+	background-color: #5D021B;
+	border: 2px solid #DBBB09;
+}
+
+.scramble-body .restart button:hover{
+	color: #fee970;
+	font-size: 25px;
+}

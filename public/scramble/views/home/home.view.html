@@ -1,0 +1,23 @@
+<div class="text-center" keypress-events ng-controller="HomeController">
+	<h2>Unscramble this word</h2>
+	<div class="row">
+		<div class="col-sm-12 scrambled-word">
+			<span class="typed" ng-repeat="letter in typed track by $index">{{letter}}</span>
+			<span class="letter" ng-repeat="letter in remaining track by $index">{{letter}}</span>
+		</div>
+	</div>
+	<div class="row result">
+		<div ng-if="success">
+			<span>{{success}}</span>
+		</div>
+		<div ng-if="error">
+			<span>{{error}}</span>
+		</div>	
+	</div>
+	
+	<div class="row restart">
+		<div ng-if="error || success">
+			<button class="btn btn-lg" ng-click="initialize()">Restart</button>
+		</div>
+	</div>
+</div>

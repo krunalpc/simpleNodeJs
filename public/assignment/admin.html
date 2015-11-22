@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+<style>
+	#header {
+	    padding:5px;
+	    border-style: solid; 
+	}
+	#header h1 {
+		text-align: left;
+		padding-left: 10%;
+	}
+	#header a {
+		text-align: right;
+		padding-left: 10%;
+	}
+	#body { padding-top: 70px; }
+	#nav {
+	    line-height:30px;
+	    background-color:#eeeeee;
+	    height:300px;
+	    width:150px;
+	    float:left;
+	    padding:5px;
+	    border-style: solid;
+	    position:relative;
+	}
+	#section {
+	    width:100%;
+	    float:auto;
+		text-align: left;
+		padding-left: 15%;
+	}
+	#section p {
+		text-align: center;
+		padding-left: 15%;
+		padding-right: 5%;
+	}
+/*	#section h2 {
+		text-align: left;
+		padding-left: 15%;
+	}
+	#section form {
+		text-align: left;
+		padding-left: 15%;
+	}
+*/	#footer {
+	    clear:both;
+	    text-align:center;
+	    padding:5px;
+	    border-style: solid; 
+	    position: absolute;
+	 	width:100%;
+		bottom:0;
+		left:0;
+	}
+</style>
+</head>
+<title>Admin</title>
+<body>
+
+<div id="header">
+	<h1>Form Maker</h1>
+	<a href="">Register</a>
+	<a href="">Login</a>
+	<a href="">Username</a>
+	<a href="">Logout</a>
+<!-- 	<nav class="navbar navbar-default navbar-static-top">
+	  <div class="container">
+	    ...
+	  </div>
+	</nav>
+ --></div>
+
+<div id="nav">
+	<a href="">Home</a><br>
+	<a href="">Profile</a><br>
+	<a href="">Admin</a><br>
+	<a href="">Forms</a><br>
+</div>
+
+<div id="section">
+   <h2>Basic Table</h2>
+	  <table class="table">
+	    <thead>
+	      <tr>
+	        <th>Username</th>
+	        <th>Passowrd</th>
+	        <th>Role</th>
+	        <th>Action</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+		    <form>
+		        <td> <input type="text" name="username" placeholder="User Name"> </td>
+		        <td> <input type="password" name="password" placeholder="Password"> </td>
+		        <td> <input type="text" name="username" placeholder="Role 1, Role 2"> </td>
+		        <td> <a href="#"><span class="glyphicon glyphicon-plus"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-ok"></span></a> </td>
+	        </form>
+	      </tr>
+	      <tr>
+	        <td>Mary</td>
+	        <td>Moe</td>
+	        <td>mary@example.com</td>
+	        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+	      </tr>
+	      <tr>
+	        <td>July</td>
+	        <td>Dooley</td>
+	        <td>july@example.com</td>
+	        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+	      </tr>
+	      <tr>
+	        <td>July</td>
+	        <td>Dooley</td>
+	        <td>july@example.com</td>
+	        <td><a href="#"><span class="glyphicon glyphicon-remove"></span></a>&nbsp<a href="#"><span class="glyphicon glyphicon-pencil"></span></a></td>
+	      </tr>
+	    </tbody>
+	  </table>
+</div>
+
+<div id="footer">
+	Copyright © Krunal Panchal
+</div>
+
+</body>
+</html>
